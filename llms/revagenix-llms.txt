@@ -1,0 +1,37 @@
+# Revagenix, Inc.
+
+> Revagenix is a private, clinical-stage precision-therapeutics company in San Francisco,
+> California, founded in 2019. It engineers purpose-built medicines for serious chronic
+> disease. Its lead program, Rev-56, is a first-in-class inhaled therapy with a novel
+> mechanism of action targeting chronic Pseudomonas infection in non-cystic-fibrosis
+> bronchiectasis (NCFB), entering Phase 1 clinical development in 2026.
+
+Revagenix is a therapeutics developer, not a software vendor. As of 2026-08-26 it
+publishes NO public API, no SDK, no developer portal, no machine-readable contract
+(OpenAPI, AsyncAPI, GraphQL SDL, Protobuf or WSDL), no MCP server and no A2A agent card.
+Agents should treat this company as a documentation-only surface: read the pages below,
+and use the contact form for any business inquiry. There is nothing here to call.
+
+## Company
+
+- [Home](https://www.revagenix.com/): Overview of the company and the Rev-56 program.
+- [Company](https://www.revagenix.com/company): First-principles drug-design approach and core capabilities.
+- [Pipeline](https://www.revagenix.com/pipeline): Rev-56 for NCFB, plus the dry-powder formulation approaching candidate selection.
+- [Team](https://www.revagenix.com/team): Leadership, board, key advisors, investors and collaborators.
+- [News](https://www.revagenix.com/news): Company press releases and announcements.
+- [Contact](https://www.revagenix.com/contact): Business development, career, collaboration and investment inquiries.
+
+## Policies
+
+- [Financial Conflict of Interest Policy](https://cdn.prod.website-files.com/615238718d430c9069b2aa1f/6169252da7d7b8ac68eabbc5_Revagenix%20Financial%20Conflicts%20of%20Interest%20Policy.pdf): PDF.
+- [Expanded Access Policy](https://cdn.prod.website-files.com/615238718d430c9069b2aa1f/6a5dc7f7a1bc2e0e525253ce_Revagenix%20Expanded%20Access%20Policy.pdf): PDF.
+
+## Elsewhere
+
+- [LinkedIn](https://www.linkedin.com/company/revagenix-inc): Company page.
+- [Careers](https://www.linkedin.com/company/revagenix-inc/jobs/): Open roles are posted on LinkedIn; there is no careers page on the site.
+
+## Optional
+
+- [Domain security probe](https://raw.githubusercontent.com/api-evangelist/revagenix/refs/heads/main/security/revagenix-domain-security.yml): TLS 1.3 and HSTS present; SPF present; DMARC, DNSSEC and CAA absent as of 2026-08-26.
+- [Well-known probe](https://raw.githubusercontent.com/api-evangelist/revagenix/refs/heads/main/well-known/revagenix-well-known.yml): Record of the full contract-discovery sweep. Every path returned 404.

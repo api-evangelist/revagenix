@@ -1,0 +1,84 @@
+generated: '2026-08-26'
+method: probed
+source: live GET probes of https://www.revagenix.com/.well-known/* on 2026-08-26
+note: >-
+  Every /.well-known/ path probed on the single host Revagenix operates returned HTTP 404.
+  The host is a Webflow-published marketing site with no API, so this manifest records a
+  verified ABSENCE, not a discovery. Webflow answers every unrecognised /.well-known/*
+  path with an 88-byte "Invalid .well-known route" HTML body under a real 404 status, so
+  there is no soft-200 catch-all here and no risk of false credit. Per the pipeline
+  contract NO WellKnown and NO SecurityTxt pointer is emitted in apis.yml, because
+  nothing was served.
+hit_count: 0
+hosts:
+- host: https://www.revagenix.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+soft_404_control:
+  path: /.well-known/agent-card.json
+  status: 404
+  bytes: 88
+  body_type: text/html
+  verdict: >-
+    Genuine 404 status with a distinct short error body; the host is NOT an SPA catch-all
+    answering 200 for arbitrary well-known paths.
+x-contract-discovery:
+  note: >-
+    STEP 0b contract discovery run in full against the only host this company operates.
+    No REST OpenAPI, no GraphQL surface, no MCP endpoint and no A2A agent card exist.
+  probes:
+  - url: https://www.revagenix.com/openapi.json
+    status: 404
+  - url: https://www.revagenix.com/openapi.yaml
+    status: 404
+  - url: https://www.revagenix.com/swagger.json
+    status: 404
+  - url: https://www.revagenix.com/v1/openapi.json
+    status: 404
+  - url: https://www.revagenix.com/api-docs
+    status: 404
+  - url: https://www.revagenix.com/docs
+    status: 404
+  - url: https://www.revagenix.com/redoc
+    status: 404
+  - url: https://www.revagenix.com/graphql
+    status: 404
+  - url: https://www.revagenix.com/api
+    status: 404
+  - url: https://www.revagenix.com/api/v1
+    status: 404
+  - url: https://www.revagenix.com/llms.txt
+    status: 404
+  - url: https://api.revagenix.com/
+    status: 0
+    note: DNS NXDOMAIN — host does not exist
+  - url: https://developer.revagenix.com/
+    status: 0
+    note: DNS NXDOMAIN — host does not exist
+  - url: https://docs.revagenix.com/
+    status: 0
+    note: TLS handshake failed — no docs host published
+  - url: https://status.revagenix.com/
+    status: 0
+    note: DNS NXDOMAIN — no status page
+  - url: https://api.github.com/orgs/revagenix
+    status: 404
+    note: no GitHub organization
+  - url: https://pypi.org/pypi/revagenix/json
+    status: 404
+    note: no PyPI package; npm registry search returned 0 results
