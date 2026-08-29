@@ -13,6 +13,17 @@ description: 'Revagenix, Inc. is a private clinical-stage precision-therapeutics
   REPAIR Impact Fund and the National Institute of Allergy and Infectious Diseases
   (NIAID contract 75N93022C00061). Revagenix is a therapeutics developer, not a software
   vendor: it publishes no API, SDK, developer portal or machine-readable contract.'
+deliveryModel:
+  model: unknown
+  open_source: false
+  commercial: false
+  callable_host: false
+  label: Delivery model not determined — needs a product licence on record
+  confidence: low
+  source:
+  - none
+  generated: '2026-08-28'
+  method: derived
 image: https://cdn.prod.website-files.com/615238718d430c9069b2aa1f/6167c5a4be0897de151aaa5e_open-graph.png
 url: https://raw.githubusercontent.com/api-evangelist/revagenix/refs/heads/main/apis.yml
 x-type: company
